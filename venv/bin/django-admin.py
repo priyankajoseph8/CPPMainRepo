@@ -1,4 +1,4 @@
-#!/home/ec2-user/environment/Django-School-Management-System/env/bin/python3
+#!/home/ec2-user/environment/CPPMainRepo/venv/bin/python3
 from django.core import management
 
 if __name__ == "__main__":
