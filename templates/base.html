@@ -276,14 +276,7 @@
   <!-- OPTIONAL SCRIPTS -->
   <script src="{% static 'dist/js/demo.js' %}"></script>
 
-  {% if messages %}
-  {% for message in messages %}
-  <script type=text/javascript>
-    toastr.options.progressBar = true;
-    toastr.{{ message.tags }}('{{ message }}')
-  </script>
-  {% endfor %}
-  {% endif %}
+ {% if messages %} {% for message in messages %} <script type="text/javascript"> toastr.options.progressBar = true; toastr.{ message.tags }('{ message }'); </script> {% endfor %} {% endif %}
 
   <script src="{% static 'plugins/Datatables/datatables.min.js' %}"></script>
 
